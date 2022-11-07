@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link stylesheet home.css-->
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+        <h1>Enter opponent's address</h1>
+        <br>
+        <!-- A input field with submit button -->
+        <input type="text" id="input" placeholder="Enter your name">
+        <button id="submit">Submit</button>
+        <!-- A div to display the name -->
+        <div id="name"></div>
+    </div>
+    <script>
+        const submit = document.getElementById("submit");
+        const input = document.getElementById("input");
+        const name = document.getElementById("name");
+        submit.addEventListener("click", () => {
+            localStorage.setItem("botswal", input.value);
+            window.location.replace("/frontend");
+        });
+    </script>
+</body>
+</html>

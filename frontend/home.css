@@ -1,0 +1,51 @@
+/*place the div at the center of the page*/
+html{
+    min-height: 100%;
+    background-image: url('./img/chesspieces/wikipedia/wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.center {
+    background: #00b4d8;
+    width: 40vw;
+    height: 40vh;
+    color:#333;
+    border-radius: 10px;
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+    box-shadow: gray 2px 2px 10px;
+    position: absolute;
+    /*Center the text*/
+    text-align: center;
+    padding-top: 5vh;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+input{
+    height: 4vh;
+    width: 20vw;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: #666 2px 2px 10px;
+    margin:2vw;
+
+}
+button{
+    background-color: #ccc;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 8vw;
+    height:4vh;
+    box-shadow: #666 2px 2px 10px;
+    transition: all 0.1s ease-in-out;
+}
+button:hover{
+    background-color: #ffb703;
+    scale: 1.1;
+}
